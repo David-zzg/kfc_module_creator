@@ -1,14 +1,14 @@
 module.exports = [{
     data:{
-        lavarel:true
+        laravel:true
     },
     output:{
-        filename:'lavarel_footer.blade.php',
+        filename:'laravel_footer.blade.php',
         path:'dist'
     }
 },{
     data:{
-        lavarel:false
+        laravel:false
     },
     output:{
         filename:'discuz_footer.blade.php',
