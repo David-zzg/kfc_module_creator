@@ -1,0 +1,7 @@
+<link rel="stylesheet" href="a.css?v=**Date.now()**">
+<!--在模板里面动态生成版本号，是不是很巧妙？-->
+**lavarel?`@if(Auth::check())`:`<!--{if $_G['uid']}-->`**
+<h1>已经登录</h1>
+**lavarel?`@else`:`<!--{else}-->`**
+<h1>未登录</h1>
+**lavarel?`@else`:`<!--{else}-->`**
