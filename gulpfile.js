@@ -22,7 +22,7 @@ const renderTemplate = function(str,data,callback){
     callback&&callback(a)
 }
 
-Object.prototype.beforeReadFile = function(content,cb){
+Object.prototype.beforeRender = function(content,cb){
     cb(content)
 }
 //判断参数是否是watch模式
@@ -33,7 +33,7 @@ const buildTask = event=>{
         const config = require(path.resolve(file,'../config.js'))//获取同级目录下的config文件
         config.forEach(item=>{
             //前置判断
-            item.beforeReadFile(content,function(content){
+            item.beforeRender(content,function(content){
                 renderTemplate(content,item.data,function(str){
                     writeFile(path.resolve(item.output.path,item.output.filename),str,function(err){
                         if(err){
