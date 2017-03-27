@@ -5,6 +5,9 @@ module.exports = [{
     output:{
         filename:'laravel_footer.blade.php',
         path:'dist'
+    },
+    beforeReadFile:function(content,cb){
+        cb('haha')
     }
 },{
     data:{
