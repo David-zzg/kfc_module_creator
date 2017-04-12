@@ -7,7 +7,7 @@ module.exports = [{
         path:'dist'
     },
     beforeRender:function(content,cb){
-        cb('haha')
+        cb(content)
     }
 },{
     data:{

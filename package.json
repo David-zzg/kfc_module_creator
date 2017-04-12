@@ -11,6 +11,7 @@
   "email": "87726263@qq.com",
   "license": "ISC",
   "devDependencies": {
+    "cli-color": "^1.2.0",
     "gulp": "^3.9.1",
     "gulp-watch": "^4.3.11",
     "map-stream": "0.0.7"
